@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>알파벳 따라쓰기</title>
+  <link rel="manifest" href="/alphabet-tracing-app/manifest.json">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      touch-action: none; /* 터치 이벤트 방지 */
+    }
+    #controls {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>알파벳 따라쓰기</h1>
+  <canvas id="drawingCanvas" width="400" height="400"></canvas>
+  <div id="controls">
+    <button onclick="drawAlphabet('A')">A</button>
+    <button onclick="drawAlphabet('B')">B</button>
+    <!-- 필요한 알파벳 버튼 추가 -->
+    <button onclick="clearCanvas()">지우기</button>
+  </div>
+
+  <script src="/alphabet-tracing-app/app.js"></script>
+</body>
+</html>
