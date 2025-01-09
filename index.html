@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>알파벳 따라쓰기</title>
-  <link rel="manifest" href="/alphabet-tracing-app/manifest.json">
+  <link rel="manifest" href="/manifest.json">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -31,7 +31,7 @@
     <button onclick="clearCanvas()">지우기</button>
   </div>
   <script src="/alphabet-tracing-app/app.js"></script>
-navigator.serviceWorker.register('/alphabet-tracing-app/sw.js')
+navigator.serviceWorker.register('./sw.js')
   .then((registration) => {
     console.log('Service Worker registered with scope:', registration.scope);
   })
