@@ -2,8 +2,8 @@ const CACHE_NAME = 'alphabet-app-cache-v1';
 const urlsToCache = [
   './',
   './index.html',
-  './app.js',
-  './manifest.json'
+  './manifest.json',
+  './app.js'
 ];
 
 self.addEventListener('install', event => {
